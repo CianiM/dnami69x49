@@ -123,7 +123,8 @@ def main(fbeg,fend,nstep,bc,scale=0,scale2=0):
 
 
         qdat = build_q('./restarts/'  ,'restart',scale,bc)
-        qdatO = build_q('./output/','output' ,scale,bc)
+        #qdatO = build_q('./output/','output' ,scale,bc)
+        qdatO = build_q('./output/','outputoutput',scale,bc)
 
         # qdatcmp = build_q('./output/omg/','output' ,scale2,bc)
         # qrst_mpi = build_q('./restarts_MPI/restarts/'  ,'restart',nsnap,bc)
@@ -149,7 +150,7 @@ def main(fbeg,fend,nstep,bc,scale=0,scale2=0):
 
         print(np.min(qp),np.max(qp))
 
-        iplt,jplt = 116,28
+        iplt,jplt = 69-1,49-1
         TimeSerie = False
         if TimeSerie:
 
